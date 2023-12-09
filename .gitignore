@@ -1,0 +1,4 @@
+./bazel-out
+./bazel-bin
+./bazel-cosmo_cc_bazel_toolchain
+./bazel-testlogs

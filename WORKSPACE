@@ -38,5 +38,8 @@ http_archive(
     patch_args = ["-p1"],
     patches = ["//buildpatches:cosmocc.patch"],
     sha256 = "7470f05ef28f1941eb655c0359de08118023ba75767c2c47b398569a16397504",
-    url = "https://github.com/jart/cosmopolitan/releases/download/3.1.3/cosmocc-3.1.3.zip",
+    urls = [
+        "https://github.com/jart/cosmopolitan/releases/download/3.1.3/cosmocc-3.1.3.zip",
+        "https://cosmo.zip/pub/cosmocc/cosmocc-3.1.3.zip",
+    ],
 )

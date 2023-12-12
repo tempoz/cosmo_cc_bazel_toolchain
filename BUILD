@@ -69,7 +69,7 @@ cc_toolchain_config(
     link_flags = [
         "-L external/cosmocc/x86_64-linux-cosmo/lib",
         "-static",
-        "-no-stdlib",
+        "-nostdlib",
         "-no-pie",
         "-fuse-ld=bfd",
         "-Wl,-z,norelro",

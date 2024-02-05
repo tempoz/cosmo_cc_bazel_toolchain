@@ -1,0 +1,15 @@
+common --noenable_bzlmod
+common --enable_platform_specific_config=true
+common --incompatible_enable_cc_toolchain_resolution
+common --experimental_platform_in_output_dir
+common --incompatible_strict_action_env
+common:linux --enable_runfiles
+
+# Use C++17 standard for all C++ compilation
+# common:linux --host_cxxopt=-std=c++17
+# common:linux --cxxopt=-std=c++17
+common:macos --host_cxxopt=-std=c++17
+
+build --extra_toolchains=//:cosmo_toolchain
+
+try-import %workspace%/user.bazelrc
